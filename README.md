@@ -1,18 +1,27 @@
-Accidents routiers en France
-==============================
-Résumé :
-L’objectif de ce projet est d’essayer de prédire la gravité des accidents routiers en France. Les prédictions seront basées sur les données historiques répertoriées sur le site du gouvernement.
-Après avoir appliqué différentes méthodes pour nettoyer le jeu de données et extrait les caractéristiques qui nous semblaient être pertinentes pour estimer la gravité des accidents, nous avons créé un modèle de Machine Learning pour essayer de prédire la gravité des accidents routiers en France.
+# Prédiction de la Gravité des Accidents Routiers en France entre 2008–2023
 
-Problématique :
-Les variables que nous possédons dans notre jeu de données sont des variables catégorielles et nous cherchons à déterminer la gravité des accidents (variable cible) selon un classement qui est le suivant : blesser léger, indemne, hospitalisé et tué.
-Nous cherchons donc à classer si les accidents de la route appartiennent à une de ces classes. Ainsi, compte tenu de ces éléments, il semblerait que nous cherchons à traiter une problématique de classification supervisée. 
+## Objectif du projet :  
+Analyser les données d'accidents de la route en France de 2008 à 2023 pour prédire la gravité des accidents à l’aide de modèles de machine learning supervisés.
 
+## Contexte :  
+Ce projet vise à aider les services de secours à mieux allouer leurs ressources en ciblant leurs interventions. L’objectif est de réduire les déplacements inutiles tout en améliorant la rapidité d’intervention sur les accidents graves.
 
-Organisation du projet :
-------------
-La première étape du projet a consisté à explorer les données, sélectionner les variables explicatives les plus pertinentes, puis nettoyer le dataset (valeurs manquantes, doublons, etc.). Un test du chi² a été utilisé pour identifier les variables les plus corrélées à la variable cible. Les données ont ensuite été divisées en jeux d'entraînement et de test, encodées, puis standardisées afin de préparer la modélisation.
+## Organisation des Notebooks :  
+- `Accidents_import&cleaning_VF` : couvre l’importation et le prétraitement des données, incluant le nettoyage, la gestion des valeurs manquantes et des doublons, ainsi que la création de nouvelles caractéristiques (feature engineering) et des tests statistiques pour améliorer la qualité des données.
 
---------
+- `Modélisation_Cible_Multiclasse_VF` : dans ce notebook, nous testons nos modèles de machine learning supervisé pour une classification avec les quatre classes originales (indemne, blessé léger, blessé hospitalisé, tué). La technique d’undersampling est appliquée pour équilibrer les classes et évaluer les performances des modèles.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+- `Undersampling_Classes_Binaires_VF` : présente le regroupement des quatre classes d’accidents en deux catégories principales (accidents graves vs légers), ramenant ainsi le problème de classification multiclasse à une classification binaire. Nous appliquons la technique d’undersampling pour équilibrer les données déséquilibrées et améliorer les performances des prédictions.
+
+- `Oversampling_Classes_Binaires_VF` : utilise la technique d’oversampling pour équilibrer les données regroupées en deux classes (accidents graves et légers), dans le but de comparer les performances des modèles avec cette méthode.
+
+## Résultats :  
+Sélection du meilleur modèle et identification des variables clés influençant la gravité des accidents.
+
+## Impact potentiel :  
+Optimisation des interventions d’urgence, meilleure gestion des ressources, et prévention renforcée grâce à l’analyse des facteurs de risque.
+
+## Conclusion :  
+Notre modèle le plus performant offre des perspectives concrètes pour optimiser les interventions des services publics et diminuer le nombre de victimes sur les routes. Il permet également d’identifier les principaux facteurs de risque grâce à l’analyse des variables les plus influentes.
+
+Ce projet a été réalisé dans le cadre de la formation Data Scientist chez [DataScientest](https://datascientest.com/).
