@@ -1,4 +1,4 @@
-# Prédiction de la Gravité des Accidents Routiers en France entre 2008–2023
+# Prédiction de la Gravité des Accidents Routiers en France entre 2008 et 2023
 
 ## Objectif du projet :  
 Analyser les données d'accidents de la route en France de 2008 à 2023 pour prédire la gravité des accidents à l’aide de modèles de machine learning supervisés.
