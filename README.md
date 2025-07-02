@@ -1,7 +1,13 @@
 Accidents routiers en France
 ==============================
+Résumé
+L’objectif de ce projet est d’essayer de prédire la gravité des accidents routiers en France. Les prédictions seront basées sur les données historiques répertoriées sur le site du gouvernement.
+Après avoir appliqué différentes méthodes pour nettoyer le jeu de données et extrait les caractéristiques qui nous semblaient être pertinentes pour estimer la gravité des accidents, nous avons créé un modèle de Machine Learning pour essayer de prédire la gravité des accidents routiers en France.
 
-This repo is a Starting Pack for DS projects. You can rearrange the structure to make it fits your project.
+Problématique
+Les variables que nous possédons dans notre jeu de données sont des variables catégorielles et nous cherchons à déterminer la gravité des accidents (variable cible) selon un classement qui est le suivant : blesser léger, indemne, hospitalisé et tué.
+Nous cherchons donc à classer si les accidents de la route appartiennent à une de ces classes. Ainsi, compte tenu de ces éléments, il semblerait que nous cherchons à traiter une problématique de classification supervisée. 
+
 
 Project Organization
 ------------
