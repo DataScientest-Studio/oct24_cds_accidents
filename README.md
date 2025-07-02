@@ -13,7 +13,7 @@ Ce projet vise à aider les services de secours à mieux allouer leurs ressource
 
 - `Undersampling_Classes_Binaires_VF` : présente le regroupement des quatre classes d’accidents en deux catégories principales (accidents graves vs légers), ramenant ainsi le problème de classification multiclasse à une classification binaire. Nous appliquons la technique d’undersampling pour équilibrer les données déséquilibrées et améliorer les performances des prédictions.
 
-- `Oversampling_Classes_Binaires_VF` : utilise la technique d’oversampling pour équilibrer les données regroupées en deux classes (accidents graves et légers), dans le but de comparer les performances des modèles avec cette méthode.
+- `Oversampling_Classes_Binaires_VF` : utilise la technique d’oversampling pour équilibrer les données regroupées en deux classes (accidents graves et légers), dans le but de comparer les performances des modèles avec celles des modèles undersampling.
 
 ## Résultats :  
 Sélection du meilleur modèle et identification des variables clés influençant la gravité des accidents.
