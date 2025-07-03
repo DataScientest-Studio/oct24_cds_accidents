@@ -16,7 +16,8 @@ Ce projet vise à aider les services de secours à mieux allouer leurs ressource
 - `Oversampling_Classes_Binaires_VF` : utilise la technique d’oversampling pour équilibrer les données regroupées en deux classes (accidents graves et légers), dans le but de comparer les performances des modèles avec celles des modèles undersampling.
 
 ## Résultats :  
-Sélection du meilleur modèle et identification des variables clés influençant la gravité des accidents.
+Sélection du meilleur modèle et identification des variables clés influençant la gravité des accidents : 
+après avoir testé et comparé plusieurs modèles avec différentes techniques d’optimisation, le modèle Random Forest, optimisé via RandomizedSearchCV et utilisant la méthode d’échantillonnage undersampling, s’est révélé le plus performant. Il offre la meilleure combinaison de métriques et répond efficacement à notre problématique, avec un recall de 0,82 sur la classe 1 (accidents graves).
 
 ## Impact potentiel :  
 Optimisation des interventions d’urgence, meilleure gestion des ressources, et prévention renforcée grâce à l’analyse des facteurs de risque.
